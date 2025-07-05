@@ -15,13 +15,13 @@ function loadHeaderFooter(callback) {
   <div class="container">        
 <div class="row">
 <div class="col-auto topheadLinks">
-    <a target="_blank" href="tel:+916354710794"><i class="fa-solid fa-phone" aria-hidden="true"></i>+91 63547 10794</a>
-    <a target="_blank" href="mailto:Yor@Email.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Yor@Email.com</a>
+    <a target="_blank" href="tel:+916354710794" id="header-contact-href"><i class="fa-solid fa-phone" aria-hidden="true"></i>+91 <span id="header-contact">63547 10794</span></a>
+    <a target="_blank" href="mailto:Yor@Email.com" id="header-email-href"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span id="header-email">Yor@Email.com</span></a>
   </div>
   <div class="col-auto topheadSocial">
-    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
-    <a target="_blank" href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+    <a target="_blank" href="https://www.facebook.com/" id="header-facebook-href"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+    <a target="_blank" href="https://www.instagram.com/" id="header-instagram-href"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+    <a target="_blank" href="https://in.linkedin.com/" id="header-linkedin-href"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
     </div>
 </div>
             </div>
@@ -30,7 +30,7 @@ function loadHeaderFooter(callback) {
             <nav class="mynavbar bg-light">
               <div class="container header">
                 <a class="brandLogo" href="index.html">
-                  <img src="image/TaxiLogo.webp" alt="Fast Taxi">
+                  <img src="image/TaxiLogo.webp" id="header-logo" alt="Fast Taxi">
                 </a>
                 <button class="navToggle">
                   <i class="fa fa-bars" aria-hidden="true"></i>
@@ -57,9 +57,9 @@ function loadHeaderFooter(callback) {
             <!-- Company Info -->
             <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
               <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/FooterTaxiLogo.webp" alt="Fast Taxi">
+                <img loading="lazy" src="image/FooterTaxiLogo.webp" id="footer-logo" alt="Fast Taxi">
               </a>
-              <p>
+              <p id="footer-description">
                 We provide reliable and affordable taxi booking services tailored for everyday travel, airport pickups, and city rides. With a focus on safety, punctuality, and customer satisfaction, we’re here to make every journey smooth.
               </p>
              
@@ -77,59 +77,46 @@ function loadHeaderFooter(callback) {
                 </li>
                 <li>
                   <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>Services</a>
                 </li>
                 <li>
                   <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                    <i class="fa-solid fa-circle-chevron-right"></i>Taxis</a>
                 </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
-                </li>
+               
                 <li>
                   <a class="footerLinks" href="contactUs.html">
                     <i class="fa-solid fa-circle-chevron-right"></i>Contact</a>
                 </li>
               </ul>
             </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
-              <h5 class="fourthH ">Explore Link</h5>
-              <ul>   
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-                 <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 
-              </ul>
-            </div>
+           
             <div class="col-md-6 col-lg-auto mb-4 mb-md-0">
               <h5 class="fourthH ">Contact Us</h5>
               <ul class="contact-info">
                 <li>
-                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8">
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8" id="footer-address-href">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                      <pre class="mb-0">
+                      <span id="footer-address">
 TF-A1-22, Akshar Pavilion Mall,
 Near Priya Cinema,Vasna Bhyali
-Main Road, Vadodara,391410</pre>
+Main Road, Vadodara,391410</span>
                   </a>
                 </li>
                 <li>
-                  <a href="tel:Number" class="footerLinks">
-                    <i class="fa-solid fa-phone"></i>+91 63547 10794</a>
+                  <a href="tel:Number" class="footerLinks" id="footer-contact-href">
+                    <i class="fa-solid fa-phone"></i>+91 <span id="footer-contact">63547 10794</span></a>
                 </li>
                 <li>
-                  <a class="emailAnchor footerLinks" href="mailto:youremail">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>youremail</a>
+                  <a class="emailAnchor footerLinks" href="mailto:youremail" id="footer-email-href">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i><span id="footer-email">youremail</span></a>
                 </li>
               </ul>
               <div class="social-icons mt-3">
-                <a target="_blank" class="facebook" href="https://www.linkedin.com/">
+                <a target="_blank" class="facebook" href="https://www.linkedin.com/" id="footer-linkedin-href">
                   <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794" id="footer-whatsapp-href">
                   <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </div>
@@ -145,7 +132,7 @@ Main Road, Vadodara,391410</pre>
           <div class="row ">
             <div class="col-12">
               <div class="inner">
-                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Fast Taxi | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by <span id="footer-copyright">Fast Taxi</span> | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                     <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
                   </a>
                 </div>
@@ -155,9 +142,9 @@ Main Road, Vadodara,391410</pre>
         </div>
       </div> `; // Keep your current footer HTML here
 
-    document.getElementById("fabContainer").innerHTML = ` <!-- whatsapp FAB icon -->
+  document.getElementById("fabContainer").innerHTML = ` <!-- whatsapp FAB icon -->
     <div class="fab-container">
-      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794" id="fabicon-whatsapp-href">
         <svg xmlns="http://www.w3.org/2000/svg" width="59.54px" height="60px" viewBox="0 0 256 258">
           <defs>
             <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
@@ -177,7 +164,7 @@ Main Road, Vadodara,391410</pre>
     </div>
     <!-- Call FAB icon -->
     <div class="Call-fab-container">
-      <a rel="noopener" target="_blank" href="tel:number">
+      <a rel="noopener" target="_blank" href="tel:number" id="fabicon-call-href">
         <img style="height: 60px; width: 60px" src="image/phone-call.png" alt="phone icon" />
       </a>
     </div>`// Keep your current Fab HTML here
@@ -266,5 +253,56 @@ function initMobileNavToggle() {
   window.addEventListener("resize", updateWhatsAppLink);
   window.addEventListener("load", updateWhatsAppLink);
 })();
+
+document.getElementById("loader").style.display = "flex";
+fetch("https://script.google.com/macros/s/AKfycbzXb0dOyGx0ynyIHlhKoTx0MK0tMxIFkE9pp8KK4GNIRwp9I2CfQ980VWQHdKv8WngXVA/exec")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+
+    document.getElementById("header-contact").textContent = data.header_contact;
+    document.getElementById("header-contact-href").href = data.header_contact_href;
+    document.getElementById("header-email").textContent = data.header_email;
+    document.getElementById("header-email-href").href = `mailto:${data.header_email_href}`;
+
+    document.getElementById("header-facebook-href").href = data.header_facebook_href;
+    document.getElementById("header-instagram-href").href = data.header_instagram_href;
+    document.getElementById("header-linkedin-href").href = data.header_linkedin_href;
+
+    document.getElementById("header-logo").src = data.header_logo;
+    document.getElementById("footer-logo").src = data.footer_logo;
+    document.getElementById("footer-description").textContent = data.footer_description;
+
+    document.getElementById("footer-address").textContent = data.footer_address;
+    document.getElementById("footer-address-href").href = data.footer_address_href;
+
+    document.getElementById("footer-contact").textContent = data.footer_contact;
+    document.getElementById("footer-contact-href").href = data.footer_contact_href;
+
+    document.getElementById("footer-email").textContent = data.footer_email;
+    document.getElementById("footer-email-href").href = `mailto:${data.footer_email_href}`;
+
+    document.getElementById("footer-linkedin-href").href = data.footer_linkedin_href;
+    document.getElementById("footer-whatsapp-href").href = data.footer_whatsapp_href;
+
+    document.getElementById("fabicon-call-href").href = `tel:${data.fabicon_call_href}`;
+    document.getElementById("fabicon-whatsapp-href").href = data.fabicon_whatsapp_href;
+    document.getElementById("footer-copyright").textContent = data.footer_copyright;
+
+
+
+
+
+
+  })
+  .catch(error => console.error("Error fetching data:", error))
+  .finally(() => {
+    // Add 1s delay, then fade out loader
+    setTimeout(() => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hide");
+      setTimeout(() => loader.style.display = "none", 500);
+    }, 2000);
+  });
 
 
