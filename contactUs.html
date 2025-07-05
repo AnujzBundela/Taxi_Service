@@ -407,7 +407,7 @@
         document.getElementById("c-address").textContent = data.c_address;
         document.getElementById("c-working-days").textContent = data.c_working_days;
         document.getElementById("c-working-time").textContent = data.c_working_time;
-        document.getElementById("c-mobile-href").href = data.c_mobile_href;
+        document.getElementById("c-mobile-href").href = `tel:${data.c_mobile_href}`
         document.getElementById("c-address-href").href = data.c_address_href;
         document.getElementById("c-map").src = data.c_map;
        
